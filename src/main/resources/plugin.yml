@@ -1,0 +1,18 @@
+name: DamageDealtFix
+version: 1.0
+main: ca.j0e.damagedealtfix.DamageDealtFix
+
+api-version: 1.17
+author: JDTech
+description: Creates a scoreboard objective that shows damage dealt via all weapons (compared to vanilla's minecraft:damage_dealt which only shows melee damage, per bug MC-29519)
+
+commands:
+  ddfreset:
+    description: DamageDealtFix - reset scoreboard
+    usage: /ddfreset [hide]
+    permission: ddf.reset
+
+permissions:
+  ddf.reset:
+    description: Allows resetting of DamageDealFix via /ddfreset
+    default: op
